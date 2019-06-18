@@ -8,3 +8,20 @@ function alphabetSort(message){
 }
 alphabetSort('hello'); // should return 'ehllo'
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fun3</title>
+</head>
+<body>
+<script>
+    function sortByLetter(str) {
+        var arr = str.split('').sort();
+        return arr.join('');
+    }
+    var str = "hello";
+    console.log(sortByLetter(str));
+</script>
+</body>
+</html>
