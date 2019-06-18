@@ -8,3 +8,24 @@ function reverseString(message){
 }
 reverseString('hello'); // should return 'olleh'
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fun1</title>
+</head>
+<body>
+<script>
+    function reverseStr(str) {
+        var result = '';
+        for (var i = str.length-1;i>=0;i--){
+            result += str.charAt(i);
+        }
+        return result;
+    }
+    var str = "hello";
+    console.log(reverseStr(str))
+</script>
+</body>
+</html>
+
