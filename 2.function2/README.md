@@ -9,3 +9,31 @@ function palindrome(message){
 palindrome('hello'); // should return false
 palindrome('abcba'); // should return true
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fun1</title>
+</head>
+<body>
+<script>
+    function reverseStr(str) {
+        var result = '';
+        for (var i = str.length-1;i>=0;i--){
+            result += str.charAt(i);
+        }
+         //判断是否回文数
+         if (str==result){
+             return true;
+         }
+         else {
+             return false;
+         }
+    }
+    var str = "hello";
+    console.log(reverseStr(str));
+    var str2 = "ouuo";
+    console.log(reverseStr(str2));
+</script>
+</body>
+</html>
