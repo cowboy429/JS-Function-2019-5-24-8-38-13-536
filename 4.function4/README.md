@@ -8,3 +8,26 @@ function countWords(message){
 }
 countWords('Good morning, I love JavaScript.'); // should return 5
 ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fun4</title>
+</head>
+<body>
+<script>
+    function getWordCount(str) {
+        var temp = str.split(/[ , ''.]/g);
+        var num=0;
+        for(var i=0;i<temp.length;i++){
+            if(temp[i]!=''){
+                num++;
+            }
+        }
+        return num;
+    }
+    var str = 'Good morning, I love JavaScript.';
+    confirm(getWordCount(str))
+</script>
+</body>
+</html>
